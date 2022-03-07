@@ -25,7 +25,10 @@ class CreateUser {
       data: {
         name,
         email,
-        password: passwordHash
+        password: passwordHash,
+        ranking: {
+          create: {}
+        }
       }
     })
 
