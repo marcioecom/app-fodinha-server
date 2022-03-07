@@ -30,8 +30,9 @@ model Ranking {
   @@map("ranking")
 }
 
-model Matches {
+model Match {
   id         String   @id @default(uuid())
+  winner     String?
   players    Json?
   created_at DateTime @default(now())
 
