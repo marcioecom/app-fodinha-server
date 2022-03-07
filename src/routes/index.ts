@@ -18,8 +18,8 @@ routes.post("/request-reset-password", requestResetPasswordController.handle)
 routes.post("/reset-password", resetPasswordController.handle)
 
 routes.use("/users", usersRoutes)
-routes.use("/matches", ensureAuthenticated, matchesRoutes)
-routes.use("/ranking", ensureAuthenticated, rankingRoutes)
+routes.use("/matches", matchesRoutes)
+routes.use("/ranking", rankingRoutes)
 
 export { routes };
 
