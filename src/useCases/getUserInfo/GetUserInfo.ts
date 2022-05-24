@@ -10,6 +10,11 @@ class GetUserInfo {
         id: true,
         name: true,
         avatar: true,
+        ranking: {
+          select: {
+            points: true,
+          }
+        }
       }
     })
 
